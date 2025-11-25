@@ -1,8 +1,13 @@
-]<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Muhammad Yousif Khan - AI Engineer & Data Scientist Portfolio">
+  
+  <link rel="icon" type="image/jpeg" href="profile.jpeg">
+
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   <link rel="stylesheet" href="style.css">
   <title>Muhammad Yousif Khan | Portfolio</title>
@@ -10,132 +15,233 @@
 <body>
   <canvas id="particleCanvas"></canvas>
 
-  <!-- Navigation -->
   <nav>
-    <a href="#home" class="logo">Muhammad Yousif Khan</a>
+    <a href="#home" class="logo">MYK<span class="dot">.</span></a>
     <div class="nav-links" id="navLinks">
       <a href="#about">About</a>
+      <a href="#services">Services</a>
       <a href="#skills">Skills</a>
       <a href="#projects">Projects</a>
-      <a href="#experience">Experience</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+      <a href="#certifications">Certifications</a> <a href="#contact" class="btn-contact">Contact Me</a>
     </div>
     <div class="hamburger" id="hamburger">
       <i class="fa fa-bars"></i>
     </div>
   </nav>
 
-  <!-- Profile Section -->
-  <div class="profile-img">
-    <img src="profile.jpeg" alt="Muhammad Yousif Khan">
-  </div>
-
-  <!-- Hero Section -->
   <header id="home">
-    <h1>Muhammad Yousif Khan</h1>
-    <p>Aspiring AI Engineer | Data Science Enthusiast | Problem Solver</p>
+    <div class="profile-container">
+        <div class="profile-img">
+            <img src="profile.jpg" alt="Muhammad Yousif Khan">
+        </div>
+    </div>
+    <h1 class="fade-in">Muhammad Yousif Khan</h1>
+    <p class="subtitle fade-in">AI Engineer & Data Scientist</p>
+    <p class="tagline fade-in">Transforming data into intelligent solutions.</p>
+    
+    <div class="hero-btns fade-in">
+        <a href="#projects" class="btn primary">View Work</a>
+        <a href="cv.pdf" download class="btn secondary"><i class="fa-solid fa-download"></i> Download CV</a>
+    </div>
   </header>
 
-  <!-- About -->
-  <section id="about">
-    <h2>About Me</h2>
-    <p>
-      Hello! I am Muhammad Yousif Khan from BS Computer Science at Sukkur IBA University (Dadu Campus).
-      My specialization is in Data Science and my goal is to become an AI Engineer.  
-      I am passionate about problem-solving, web development, and continuous learning.
-    </p>
-  </section>
-
-  <!-- Skills -->
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills-grid">
-      <div class="skill-card"><h3>Programming</h3><p>Java, C++, Python, R</p></div>
-      <div class="skill-card"><h3>Frameworks</h3><p>React, FastAPI</p></div>
-      <div class="skill-card"><h3>Data Tools</h3><p>Pandas, Numpy, OR-Tools, SQL, Excel</p></div>
-      <div class="skill-card"><h3>Other Tools</h3><p>Git, GitHub, VS Code, Jupyter Notebook</p></div>
+  <section id="about" class="reveal">
+    <div class="section-header">
+        <h2>About Me</h2>
+        <span class="line"></span>
+    </div>
+    <div class="about-content">
+        <p>
+            I am a **Computer Science** undergraduate specializing in **Data Science** and **Artificial Intelligence**. 
+            With a passion for solving complex problems, I build scalable web applications and intelligent systems.
+        </p>
+        <p>
+            Beyond coding, I have a deep expertise in operational efficiency, offering bespoke **Inventory Management Solutions** that help businesses track assets, optimize supply chains, and reduce costs through data-driven insights.
+        </p>
     </div>
   </section>
 
-  <!-- Projects -->
-  <section id="projects">
-    <h2>Projects</h2>
+  <section id="services" class="reveal">
+    <div class="section-header">
+        <h2>My Services</h2>
+        <span class="line"></span>
+    </div>
+    <div class="services-grid">
+        <div class="service-card">
+            <i class="fa-solid fa-boxes-stacked"></i>
+            <h3>Inventory Management</h3>
+            <p>End-to-end software solutions for tracking stock, managing warehouses, and automating reorder points.</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-brain"></i>
+            <h3>AI & Machine Learning</h3>
+            <p>Predictive analytics, NLP chatbots, and spam detection models tailored to business needs.</p>
+        </div>
+        <div class="service-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Data Analytics</h3>
+            <p>Interactive dashboards (Excel/PowerBI) and forecasting to drive strategic decision-making.</p>
+        </div>
+    </div>
+  </section>
+
+  <section id="skills" class="reveal">
+    <div class="section-header">
+        <h2>Technical Arsenal</h2>
+        <span class="line"></span>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card"><i class="fa-brands fa-python"></i><h3>Languages</h3><p>Python, Java, C++, R</p></div>
+      <div class="skill-card"><i class="fa-brands fa-react"></i><h3>Frameworks</h3><p>React, FastAPI, Tailwind</p></div>
+      <div class="skill-card"><i class="fa-solid fa-database"></i><h3>Data Science</h3><p>Pandas, NumPy, SQL, Prophet</p></div>
+      <div class="skill-card"><i class="fa-solid fa-code-branch"></i><h3>Tools</h3><p>Git, VS Code, Jupyter</p></div>
+    </div>
+  </section>
+
+  <section id="projects" class="reveal">
+    <div class="section-header">
+        <h2>Featured Projects</h2>
+        <span class="line"></span>
+    </div>
     <div class="projects-grid">
       <div class="project-card">
-        <a href="https://github.com/MuhammadYousifKhan/ML-Spam-Detection-Project" target="_blank">
-          <h3>Email Spam Detector</h3>
-        </a>
-        <p>ML app using Logistic Regression & TF-IDF with Gradio interface.</p>
+        <div class="card-content">
+            <h3>Email Spam Detector</h3>
+            <p>ML app utilizing Logistic Regression & TF-IDF with a sleek Gradio interface.</p>
+            <a href="https://github.com/MuhammadYousifKhan/ML-Spam-Detection-Project" target="_blank" class="project-link">View Code <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
       </div>
       <div class="project-card">
-        <a href="https://github.com/MuhammadYousifKhan/NLP-Text-Summarizer" target="_blank">
-          <h3>NLP Text Summarizer</h3>
-        </a>
-        <p>AI-powered summarizer for educational content.</p>
+        <div class="card-content">
+            <h3>NLP Text Summarizer</h3>
+            <p>AI-powered tool that condenses educational content into concise summaries.</p>
+            <a href="https://github.com/MuhammadYousifKhan/NLP-Text-Summarizer" target="_blank" class="project-link">View Code <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
       </div>
       <div class="project-card">
-        <a href="https://github.com/MuhammadYousifKhan/AI-Study-Chatbot-Using-NLP-and-ML" target="_blank">
-          <h3>AI Study ChatBot</h3>
-        </a>
-        <p>Personalized chatbot using NLP & ML for students.</p>
+        <div class="card-content">
+            <h3>Sales Dashboard</h3>
+            <p>Interactive Excel dashboard with advanced slicers & visualizations.</p>
+            <a href="https://github.com/MuhammadYousifKhan/SalesDashboard" target="_blank" class="project-link">View Code <i class="fa-solid fa-arrow-right"></i></a>
+        </div>
       </div>
-      <div class="project-card">
-        <a href="https://github.com/MuhammadYousifKhan/Time-Series-Forecasting-Task3" target="_blank">
-          <h3>Time Series Forecasting</h3>
-        </a>
-        <p>Sales data forecasting using Prophet.</p>
-      </div>
-      <div class="project-card">
-        <a href="https://github.com/MuhammadYousifKhan/SalesDashboard" target="_blank">
-          <h3>Sales Dashboard</h3>
-        </a>
-        <p>Interactive Excel dashboard with slicers & visualizations.</p>
-      </div>
-      <div class="project-card">
-        <h3>University Timetable Scheduler</h3>
-        <p>Full-stack app (React + FastAPI + OR-Tools) (Work in Progress).</p>
+       <div class="project-card">
+        <div class="card-content">
+            <h3>University Scheduler</h3>
+            <p>Full-stack optimization app (React + FastAPI + OR-Tools).</p>
+            <span class="status">Work in Progress</span>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- Experience -->
-  <section id="experience">
-    <h2>Internships / Experience</h2>
-    <ul>
-      <li>Intern – Intelligence (Data Science)</li>
-      <li>Intern – Elevvo Pathways (Data Analytics)</li>
-      <li>Intern – DevelopersHub (AI & ML)</li>
-      <li>Event Management – Sukkur IBA University Dadu Campus (Freshers Fiesta 2024, Independence Day 2025)</li>
-    </ul>
+  <section id="certifications" class="reveal">
+    <div class="section-header">
+        <h2>Certifications</h2>
+        <span class="line"></span>
+    </div>
+    <div class="cert-grid">
+        <div class="cert-card">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>Data Science Professional</h3>
+            <p>IBM / Coursera</p>
+        </div>
+        <div class="cert-card">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>Machine Learning Specialization</h3>
+            <p>DeepLearning.AI</p>
+        </div>
+        <div class="cert-card">
+            <i class="fa-solid fa-certificate"></i>
+            <h3>Python for Everybody</h3>
+            <p>University of Michigan</p>
+        </div>
+    </div>
   </section>
 
-  <!-- Education -->
-  <section id="education">
-    <h2>Education</h2>
-    <ul>
-      <li>BS in Computer Science – Sukkur IBA University Dadu Campus (Currently in 5th Semester)</li>
-      <li>Intermediate in Pre-Engineering – Government Ustad Bukhari Degree College, Dadu</li>
-    </ul>
+  <section id="experience" class="reveal">
+    <div class="section-header">
+        <h2>Experience</h2>
+        <span class="line"></span>
+    </div>
+    <div class="timeline">
+        <div class="timeline-item">
+            <span class="date">Present</span>
+            <h3>Intern – Intelligence</h3>
+            <p>Data Science & Analytics</p>
+        </div>
+        <div class="timeline-item">
+            <span class="date">2024</span>
+            <h3>Intern – Elevvo Pathways</h3>
+            <p>Data Analytics</p>
+        </div>
+        <div class="timeline-item">
+            <span class="date">2024</span>
+            <h3>Event Management</h3>
+            <p>Sukkur IBA University (Freshers Fiesta)</p>
+        </div>
+    </div>
   </section>
 
-  <!-- Contact -->
-<section id="contact">
-  <h2>Contact</h2>
-  <p><a href="https://wa.me/923403914030" target="_blank" data-username="+92 3403914030"><i class="fa-brands fa-whatsapp"></i></a></p>
-  <p><a href="mailto:yousifkhankhushik@gmail.com" target="_blank" data-username="yousifkhankhushik@gmail.com"><i class="fa-regular fa-envelope"></i></a></p>
-  <p><a href="https://github.com/MuhammadYousifKhan" target="_blank" data-username="github.com/MuhammadYousifKhan"><i class="fa-brands fa-github-alt"></i></a></p>
-  <p><a href="https://linkedin.com/in/muhammad-yousif-khan" target="_blank" data-username="linkedin.com/in/muhammad-yousif-khan"><i class="fa-brands fa-linkedin"></i></a></p>
-  <p><a href="https://www.instagram.com/jose._.phh/" target="_blank" data-username="@jose._.phh"><i class="fa-brands fa-instagram"></i></a></p>
-  <p><a href="https://www.tiktok.com/@joseph_khan110" target="_blank" data-username="@joseph_khan110"><i class="fa-brands fa-tiktok"></i></a></p>
-  <p><a href="https://www.facebook.com/yousif.khan" target="_blank" data-username="Facebook: Yousif Khan"><i class="fa-brands fa-facebook"></i></a></p>
-</section>
+  <section id="contact" class="reveal">
+    <div class="section-header">
+        <h2>Get in Touch</h2>
+        <span class="line"></span>
+    </div>
+    
+    <div class="contact-container">
+        <div class="contact-info">
+            <h3>Let's Collaborate</h3>
+            <p>Interested in my Inventory Management Services or need an AI solution? Fill out the form or reach out directly.</p>
+            <div class="info-item">
+                <i class="fa-brands fa-whatsapp"></i>
+                <span>+92 340 3914030</span>
+            </div>
+            <div class="info-item">
+                <i class="fa-regular fa-envelope"></i>
+                <span>yousifkhankhushik@gmail.com</span>
+            </div>
+            <div class="social-links">
+                <a href="https://github.com/MuhammadYousifKhan"><i class="fa-brands fa-github"></i></a>
+                <a href="https://linkedin.com/in/muhammad-yousif-khan"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+        </div>
 
+        <form class="contact-form" id="contactForm">
+            <div class="form-group">
+                <input type="text" id="name" required placeholder=" ">
+                <label for="name">Your Name</label>
+            </div>
+            <div class="form-group">
+                <input type="email" id="email" required placeholder=" ">
+                <label for="email">Your Email</label>
+            </div>
+             <div class="form-group">
+                <select id="service" required>
+                    <option value="" disabled selected>Interested Service</option>
+                    <option value="Inventory Management">Inventory Management</option>
+                    <option value="AI/ML Solution">AI/ML Solution</option>
+                    <option value="Hiring">Hiring / Recruitment</option>
+                    <option value="Other">Other</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <textarea id="message" rows="4" required placeholder=" "></textarea>
+                <label for="message">Your Message</label>
+            </div>
+            <button type="submit" class="btn primary">Send Message</button>
+        </form>
+    </div>
+  </section>
 
-  <!-- Footer -->
   <footer>
     <p>© 2025 Muhammad Yousif Khan. All rights reserved.</p>
   </footer>
+
+  <button id="backToTop" title="Go to top">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
 
   <script src="script.js"></script>
 </body>
